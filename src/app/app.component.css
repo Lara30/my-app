@@ -1,0 +1,12 @@
+button {
+    border: 1px solid lightpink;
+    background-color: azure;
+    width: 100px;
+    height: 20px;
+    color: black;
+}
+
+input {
+    width: 500px;
+    background-color: burlywood;
+}

@@ -1,0 +1,20 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{nom}}!
+  </h1>
+</div>
+
+  <div class="container zone1">
+    <h3>Composant parent</h3>
+    <input type="text" placeholder="Ecrire" [(ngModel)]="fruit">
+    <h2>{{fruit}}</h2>
+    <button (click)="fruits.push(fruit)" class="btn btn-success" name="button">{{ajout}} </button>
+  </div>
+
+    <div class="container zone2">
+      <h3 class="enfant">Composant enfant</h3>
+      <h3>liste de fruits</h3>
+
+    <app-jeudi *ngFor="let fruitItem of fruits" [fruit]= "fruitItem" (deleted)="deleteFruit($event)" class="tal"></app-jeudi>
+    </div>
