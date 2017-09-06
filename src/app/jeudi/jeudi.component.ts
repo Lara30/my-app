@@ -8,8 +8,6 @@ import { Component, Input, OnInit, Output, EventEmitter} from '@angular/core';
 export class JeudiComponent implements OnInit {
   @Input() public fruit: string;
   @Output() public deleted: EventEmitter <string> = new EventEmitter();
-
-
   constructor() {
   }
   ngOnInit() {
